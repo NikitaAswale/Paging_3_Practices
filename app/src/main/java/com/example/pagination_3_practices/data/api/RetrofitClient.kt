@@ -13,9 +13,10 @@ object RetrofitClient {
         .readTimeout(30, TimeUnit.SECONDS)
         .build()
 
-    val retrofit: Retrofit = Retrofit.Builder()
+    val retrofit: CharacterApiService = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .client(okHttpClient)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
+        .create(CharacterApiService::class.java)
 }
