@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit
 object RetrofitClient {
     private const val BASE_URL = "https://rickandmortyapi.com/api/"
 
-    val retrofit: CharacterApiService = Retrofit.Builder()
+    val apiService: CharacterApiService = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
