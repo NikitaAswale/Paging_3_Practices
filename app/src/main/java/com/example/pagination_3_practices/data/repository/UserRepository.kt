@@ -12,7 +12,13 @@ import kotlinx.coroutines.flow.Flow
 import retrofit2.http.POST
 
 class CharacterRepository {
-    private val apiService = RetrofitClient.retrofit
+    private val apiService = RetrofitClient.apiService
+
+    /*
+
+    apiService - BAse url - "BASE_URL"
+                 Convert tyo Data class
+     */
 
     fun getCharacters(): Flow<PagingData<Character>> {
         return Pager(
