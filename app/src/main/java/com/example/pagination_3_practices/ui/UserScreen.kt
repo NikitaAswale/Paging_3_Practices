@@ -26,7 +26,7 @@ fun CharacterScreen(viewModel: CharacterViewModel = viewModel()) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Rick and Morty Characters") }
+                title = { Text("Ricky and Morty Characters") }
             )
         }
     ) { padding ->
