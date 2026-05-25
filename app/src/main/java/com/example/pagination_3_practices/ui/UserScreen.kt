@@ -94,7 +94,7 @@ fun CharacterItem(character: Character) {
     ) {
         Column(
             modifier = Modifier
-                .padding(16.dp)
+                .padding(24.dp)
                 .fillMaxWidth()
         ) {
             Text(
