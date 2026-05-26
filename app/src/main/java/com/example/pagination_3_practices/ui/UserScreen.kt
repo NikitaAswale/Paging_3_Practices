@@ -47,7 +47,7 @@ fun CharacterScreen(viewModel: CharacterViewModel = viewModel()) {
                             Box(
                                 modifier = Modifier
                                     .fillMaxWidth()
-                                    .padding(32.dp),
+                                    .padding(24.dp),
                                 contentAlignment = Alignment.Center
                             ) {
                                 CircularProgressIndicator()
